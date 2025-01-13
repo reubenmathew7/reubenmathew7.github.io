@@ -160,7 +160,7 @@ span.highlight {
 /* Media query for narrow screens */
 @media screen and (max-width: 768px) {
     video, .one, .two, img {
-        width: 110px;  /* or whatever small size you prefer */
+        width: 110px; 
         height: auto;
         position: relative;
     }
