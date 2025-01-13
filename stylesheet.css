@@ -141,19 +141,54 @@ span.highlight {
     border-radius: 10px;
 }
 
+/*Original CSS for .one and .two as is */
+.one {
+  width: 160px;
+  height: 160px;
+  position: relative;
+}
+
+.two {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+}
+
+/* Media query for narrow screens */
 @media screen and (max-width: 768px) {
-  .one, .two {
-    float: none;
-    display: block;
-    margin: 0 auto 20px auto;
+    video, .one, .two, img {
+        width: 110px;  /* or whatever small size you prefer */
+        height: auto;
+        position: relative;
+    }
+}
+
+/* For larger phones and small tablets */
+@media screen and (max-width: 768px) {
+  video, .one, .two, img {
+      width: 110px;
+      height: auto;
+      position: relative;
   }
-  
-  body,
-  td,
-  th,
-  tr,
-  p {
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+}
+
+/* For medium-sized phones */
+@media screen and (max-width: 500px) {
+  video, .one, .two, img {
+      width: 90px;
+      height: auto;
+      position: relative;
+  }
+}
+
+/* For smaller phones */
+@media screen and (max-width: 375px) {
+  video, .one, .two, img {
+      width: 80px;
+      height: auto;
+      position: relative;
   }
 }
