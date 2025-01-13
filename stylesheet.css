@@ -140,3 +140,20 @@ span.highlight {
     display: inline-block;
     border-radius: 10px;
 }
+
+@media screen and (max-width: 768px) {
+  .one, .two {
+    float: none;
+    display: block;
+    margin: 0 auto 20px auto;
+  }
+  
+  body,
+  td,
+  th,
+  tr,
+  p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+}
