@@ -187,7 +187,7 @@ span.highlight {
 /* For smaller phones */
 @media screen and (max-width: 375px) {
   video, .one, .two, img {
-      width: 80px;
+      width: 70px;
       height: auto;
       position: relative;
   }
