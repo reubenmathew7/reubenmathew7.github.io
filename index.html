@@ -2,14 +2,17 @@
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Reuben Mathew - Mechanical Engineering Graduate Student">
+    
     <title>Reuben Mathew</title>
-
     <meta name="author" content="Reuben Mathew">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+    
+    <!-- Preload your fonts for better performance -->
+    <link rel="preload" href="https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXiWtFCc.woff2" as="font" type="font/woff2" crossorigin>
   </head>
 
   <body>
@@ -108,17 +111,19 @@
                     <div class="one">
                         <div class="two" id='r2r_image'>
                             <div style="width:200%; position:relative; padding-bottom:112.5%;">
-                                <iframe 
-                                    width="100%" 
-                                    height="100%" 
-                                    src="https://www.youtube.com/embed/IWClxy00KpI?autoplay=1&mute=1&loop=1&playlist=IWClxy00KpI&vq=hd1080"
-                                    style="position:absolute; top:0; left:0; cursor:pointer;"
-                                    title="Click to expand"
-                                    frameborder="0"
-                                    allow="autoplay; encrypted-media"
-                                    allowfullscreen
-                                    onclick="openVideoModal(this)">
-                                </iframe>
+                               <video 
+                                width="100%" 
+                                height="100%" 
+                                style="position:absolute; top:0; left:0; cursor:pointer;"
+                                autoplay 
+                                title="Click to expand"
+                                controls
+                                muted 
+                                loop
+                                onclick="openVideoModal(this)">
+                              <source src="Projects/ROS.mp4" type="video/mp4">
+                              Your browser does not support the video tag.
+                               </video>
                             </div>
                         </div>
                         <img src='Projects/ROS arm.png' style="width:200%; height:112.5%">
@@ -150,17 +155,19 @@
                     <div class="one">
                         <div class="two" id='r2r_image_carla'>
                             <div style="width:200%; position:relative; padding-bottom:112.5%;">
-                                <iframe 
-                                    width="100%" 
-                                    height="100%" 
-                                    src="https://www.youtube.com/embed/1C2dnyeJrB0?autoplay=1&mute=1&loop=1&playlist=1C2dnyeJrB0&vq=hd1080"
-                                    style="position:absolute; top:0; left:0; cursor:pointer;"
-                                    title="Click to expand"
-                                    frameborder="0"
-                                    allow="autoplay; encrypted-media"
-                                    allowfullscreen
-                                    onclick="openVideoModal(this)">
-                                </iframe>
+                              <video 
+                              width="100%" 
+                              height="100%" 
+                              style="position:absolute; top:0; left:0; cursor:pointer;"
+                              autoplay 
+                              title="Click to expand"
+                              controls
+                              muted 
+                              loop
+                              onclick="openVideoModal(this)">
+                            <source src="Projects/Carla Sim.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                             </video>
                             </div>
                         </div>
                         <img src='Projects/Carla simulation.png' style="width:200%; height:112.5%">
@@ -255,17 +262,19 @@
                     <div class="one">
                         <div class="two" id='r2r_image_ansys'>
                             <div style="width:200%; position:relative; padding-bottom:112.5%;">
-                                <iframe 
-                                    width="100%" 
-                                    height="100%" 
-                                    src="https://www.youtube.com/embed/5HVwB9-cS9E?autoplay=1&mute=1&loop=1&playlist=5HVwB9-cS9E&vq=hd1080"
-                                    style="position:absolute; top:0; left:0; cursor:pointer;"
-                                    title="Click to expand"
-                                    frameborder="0"
-                                    allow="autoplay; encrypted-media"
-                                    allowfullscreen
-                                    onclick="openVideoModal(this)">
-                                </iframe>
+                              <video 
+                              width="100%" 
+                              height="100%" 
+                              style="position:absolute; top:0; left:0; cursor:pointer;"
+                              autoplay 
+                              title="Click to expand"
+                              controls
+                              muted 
+                              loop
+                              onclick="openVideoModal(this)">
+                            <source src="Projects/Ansys sim.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                             </video>
                             </div>
                         </div>
                         <img src='Projects/FSAE Chassis analysis.jpg' style="width:200%; height:112.5%">
