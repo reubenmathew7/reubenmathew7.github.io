@@ -196,13 +196,36 @@
           
               <tr onmouseout="r2r_stop_vc()" onmouseover="r2r_start_vc()">
                 <td style="padding:20px;width:42%;vertical-align:middle;">
-                    <div class="one">
-                        <img src='Projects/Vehicle counter.png' 
-                             style="width:200%; height:112.5%; cursor: pointer;" 
-                             onclick="openModal(this.src)"
-                             title="Click to expand">
-                    </div>
-                </td>
+                  <div class="one">
+                      <div class="two" id='r2r_image_vc'>
+                          <div style="width:200%; position:relative; padding-bottom:112.5%;">
+                            <video 
+                            width="100%" 
+                            height="100%" 
+                            style="position:absolute; top:0; left:0; cursor:pointer;"
+                            autoplay 
+                            title="Click to expand"
+                            controls
+                            muted 
+                            loop
+                            onclick="openVideoModal(this)">
+                          <source src="Projects/Vehicle Counter Demo.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                           </video>
+                          </div>
+                      </div>
+                      <img src='Projects/Vehicle counter.png' style="width:200%; height:112.5%">
+                  </div>
+                  <script type="text/javascript">
+                      function r2r_start_vc() {
+                          document.getElementById('r2r_image_vc').style.opacity = "1";
+                      }
+                      function r2r_stop_vc() {
+                          document.getElementById('r2r_image_vc').style.opacity = "0";
+                      }
+                      r2r_stop_vc()
+                  </script>
+              </td>
                 <td style="padding:20px;width:58%;vertical-align:middle">
                   <papertitle><strong>Vehicle Detection and Counting using YOLOv8 and OpenCV (May, 2024)</strong></papertitle>
                   <p>
