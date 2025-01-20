@@ -34,7 +34,7 @@
                   <a href="mailto:reuben7@uw.edu">Email</a> &nbsp;/&nbsp;
                   <a href="https://drive.google.com/file/d/1dwCYIvorF5igJvGDL7_OkPYQohKRiuTo/view?usp=sharing">CV</a> &nbsp;/&nbsp;
                   <a href="https://www.linkedin.com/in/reuben-mathew-uw/">LinkedIn</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/reubenmathew7">Github</a>
+                  <a href="https://github.com/reubenmathew7">GitHub</a>
                 </p>
               </td>
               <td style="padding:2.5%;width:40%;max-width:40%">
@@ -97,7 +97,7 @@
                 <tr>
                     <td>
                         <h2>Projects</h2>
-                        <span style="font-size: 14px; color: #666; font-weight: normal; font-style: italic;">Images are expandable</span>
+                        <span style="font-size: 14px; color: #616161; font-weight: normal; font-style: italic;">Images are expandable</span>
                     </td>
                 </tr>
             </tbody>
@@ -107,7 +107,7 @@
             <tbody>
           
               <tr onmouseout="r2r_stop()" onmouseover="r2r_start()">
-                <td style="padding:20px;width:42%;vertical-align:middle;">
+                <td style="padding:20px;width:42%;vertical-align:middle; text-align:middle;">
                     <div class="one">
                         <div class="two" id='r2r_image'>
                             <div style="width:200%; position:relative; padding-bottom:112.5%;">
@@ -138,7 +138,7 @@
                         r2r_stop()
                     </script>
                 </td>
-                <td style="padding:20px;width:58%;vertical-align:middle">
+                <td style="padding:20px;width:58%;vertical-align:middle; text-align:left;">
                   <papertitle><strong>ROS-Based Robotic Arm Simulation (December, 2024)</strong></papertitle>
                   <p>
                     Developed a robotic arm simulation system using ROS framework, integrating:<br>
@@ -235,18 +235,46 @@
                     • Custom region masking for specific detection zones<br>
                     • Real-time visualization system with count display and tracking boxes
                   </p>
+                  <p>
+                    <a href="https://github.com/reubenmathew7/Car-Counter" target="_blank" style="color:#1772d0; text-decoration:none; font-weight:bold; font-size:0.85em;">
+                      Learn more &raquo;
+                    </a>
+                  </p>
                 </td>
               </tr>
           
               <tr onmouseout="r2r_stop_matlab()" onmouseover="r2r_start_matlab()">
                 <td style="padding:20px;width:42%;vertical-align:middle;">
-                    <div class="one">
-                        <img src='Projects/Covid 19.png' 
-                             style="width:200%; height:112.5%; cursor: pointer;" 
-                             onclick="openModal(this.src)"
-                             title="Click to expand">
-                    </div>
-                </td>
+                  <div class="one">
+                      <div class="two" id='r2r_image_matlab'>
+                          <div style="width:200%; position:relative; padding-bottom:112.5%;">
+                            <video 
+                            width="100%" 
+                            height="100%" 
+                            style="position:absolute; top:0; left:0; cursor:pointer;"
+                            autoplay 
+                            title="Click to expand"
+                            controls
+                            muted 
+                            loop
+                            onclick="openVideoModal(this)">
+                          <source src="Projects/COVID-19 Visualizer Demo.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                           </video>
+                          </div>
+                      </div>
+                      <img src='Projects/COVID-19 Visualizer.png' style="width:200%; height:112.5%">
+                  </div>
+                  <script type="text/javascript">
+                      function r2r_start_matlab() {
+                          document.getElementById('r2r_image_matlab').style.opacity = "1";
+                      }
+                      function r2r_stop_matlab() {
+                          document.getElementById('r2r_image_matlab').style.opacity = "0";
+                      }
+                      r2r_stop_matlab()
+                  </script>
+              </td>
                 <td style="padding:20px;width:58%;vertical-align:middle">
                   <papertitle><strong>Matlab Program to visualize COVID19 data (November, 2023)</strong></papertitle>
                   <p>
@@ -255,6 +283,11 @@
                     • Interactive GUI with dynamic plotting capabilities and data filtering<br>
                     • Custom search functionality and data range selection tools<br>
                     • Real-time statistical analysis with adjustable moving averages
+                  </p>
+                  <p>
+                    <a href="https://github.com/reubenmathew7/COVID-19-Visualizer" target="_blank" style="color:#007BFF; text-decoration:none; font-weight:bold; font-size:0.85em;">
+                      Learn more &raquo;
+                    </a>
                   </p>
                 </td>
               </tr>
@@ -331,7 +364,7 @@
                          <br>
                          <br>
                          
-                          <p style="text-align: center;font-size: 14px;">Website template cloned from <a href = "https://jonbarron.info/" style="font-size: 14px;">here!</a>
+                          <p style="text-align: center;font-size: 14px;">The template for this website was cloned from <a href = "https://jonbarron.info/" style="font-size: 14px;">here.</a>
                           
                         </td>
                       </tr>
@@ -344,7 +377,7 @@
         </td>
       </tr>
     </table>
-    <!-- Add this modal HTML somewhere in your body -->
+
 <div id="imageModal" class="modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.9); z-index:1000;">
     <img id="modalImage" style="max-width:90%; max-height:90%; margin:auto; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);">
     <span onclick="closeModal()" style="position:absolute; top:15px; right:35px; color:white; font-size:40px; cursor:pointer;">&times;</span>
@@ -361,7 +394,7 @@ function closeModal() {
 }
 </script>
 
-<!-- Add this modal HTML -->
+
 <div id="videoModal" class="modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.9); z-index:1000;">
     <video id="modalVideo" controls style="max-width:90%; max-height:90%; margin:auto; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);">
         <source src="" type="video/mp4">
