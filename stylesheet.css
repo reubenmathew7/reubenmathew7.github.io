@@ -256,6 +256,21 @@ input:checked + .slider:before {
   background-color: #121212;
 }
 
+@media (max-width: 480px) {
+  .switch {
+    width: 40px;
+    height: 20px;
+  }
+
+  .slider:before {
+    width: 16px;
+    height: 16px;
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(20px);
+  }
+}
 /* ========== DARK MODE STYLES ========== */
 
 .dark-mode {
