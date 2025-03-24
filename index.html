@@ -16,6 +16,25 @@
   </head>
 
   <body>
+    <div class="container">
+      <nav class="navbar">
+        <div class="navbar-center">
+          <a href="#interests">Interests</a>
+          <a href="#work-experience">Experience</a>
+          <a href="#technical-skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <div class="theme-toggle">
+            <label class="switch">
+              <input type="checkbox" id="theme-toggle">
+              <span class="slider round"></span>
+            </label>
+            <span class="toggle-label">Dark Mode</span>
+          </div>
+        </div>
+      </nav>
+  
+  
+
     <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr style="padding:0px">
         <td style="padding:0px">
@@ -46,21 +65,28 @@
             <tbody>
               <tr>
                 <td style="padding:20px;width:100%;vertical-align:middle">
-                    <section id="interests">
-                        <h2>Interests</h2>
-                        <p>
-                          My primary interests lie in the intersection of <strong>Robotics and Automation</strong>, <strong>Control Systems</strong>, and <strong>Mechatronics</strong>. I am particularly passionate about designing intelligent systems that bridge the gap between theoretical control frameworks and real-world robotic applications. 
-                        </p>
-                        <p>
-                            Additionally, I have a strong interest in leveraging modern optimization techniques to enhance the design and manufacturing process. This includes applying tools like CAD and FEA to create innovative, cost-effective solutions. I am particularly passionate about advancing human-robot interaction through intelligent control frameworks that enable robots to better understand and interact with their environments.
-                        </p>
-                      </section>
+                  <section id="interests">
+                    <h2>Interests</h2>
+                    <p>
+                      My primary interests lie in the intersection of <strong>Robotics and Automation</strong>, <strong>Control Systems</strong>, and <strong>Mechatronics</strong>. I am particularly passionate about designing intelligent systems that bridge the gap between theoretical control frameworks and real-world robotic applications.
+                    </p>
+                    <p>
+                      Additionally, I have a strong interest in leveraging modern optimization techniques to enhance the design and manufacturing process. This includes applying tools like CAD and FEA to create innovative, cost-effective solutions. I am especially driven by advancing human-robot interaction through intelligent control frameworks that enable robots to better understand and interact with their environments.
+                    </p>
+                    <p>
+                      Outside of engineering, I enjoy weight lifting to stay active and practicing guitar as a creative outlet. I find that both help me stay focused, energized, and balanced in my academic and project work.
+                    </p>
+                  </section>
 
                       <section id="work-experience" style="margin-top:45px;">
-                        <h2>Work Experience</h2>
+                        <h2>Experience</h2>
                         <ul>
                             <li>
-                                <strong>Boeing Advanced Research Collaboration at University of Washington:</strong> 
+                              <strong>
+                                <a href="https://www.barc.uw.edu/" target="_blank" class="highlighted-link">
+                                  Boeing Advanced Research Collaboration at University of Washington:
+                                </a>
+                              </strong>
                                 Mechatronics Masters Project Engineer
                                 <ul>
                                     <li>Designing and prototyping an automated robotic system for ultrasonic inspection cell maintenance.</li>
@@ -69,7 +95,11 @@
                             </li>
                             <br>
                             <li>
-                                <strong>Altair (Robotics Technical Team of Delhi Technological University):</strong> 
+                              <strong>
+                                <a href="https://www.altair-dtu.in/" target="_blank" class="highlighted-link">
+                                  Altair (Robotics Technical Team of Delhi Technological University):
+                                </a>
+                              </strong>
                                 Team Advisor
                                 <ul>
                                     <li>Led and developed multiple robotics projects, including Micromouse, Line Following Robot, and Robosoccer.</li>
@@ -80,7 +110,11 @@
                             </li>
                             <br>
                             <li>
-                                <strong>Delhi Metro Rail Corporation:</strong> 
+                              <strong>
+                                <a href="https://delhimetrorail.com/" target="_blank" class="highlighted-link">
+                                  Delhi Metro Rail Corporation:
+                                </a>
+                              </strong>
                                 Mechanical Engineering Trainee
                                 <ul>
                                     <li>Acquired hands-on experience in Bogie, HVAC, Door Systems, and Pneumatics.</li>
@@ -89,7 +123,11 @@
                             </li>
                             <br>
                             <li>
-                                <strong>Suzuki Motor Corp. Service Center:</strong> 
+                              <strong>
+                                <a href="https://www.marutisuzuki.com/" target="_blank" class="highlighted-link">
+                                  Suzuki Motor Corp. Service Center:
+                                </a>
+                              </strong>
                                 Mechanical Engineering Trainee
                                 <ul>
                                     <li>Diagnosed and repaired over 150 vehicles, optimizing service workflows to reduce service time by 5%.</li>
@@ -98,16 +136,17 @@
                             </li>
                         </ul>
                     </section>
-
                 </td>
               </tr>
             </tbody>
           </table>
+
           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
             <tbody>
               <tr>
                 <tr>
                   <td style="padding:20px;width:100%;vertical-align:middle">
+                    <section id="technical-skills"></section>
                     <h2>Technical Skills</h2>
               </tr>
               <tr>
@@ -123,6 +162,7 @@
                     <br>
                     <li><strong>Others:</strong> ROS, PLC, Arduino IDE, Raspberry Pi, Simulink, PCB Design, GD&T, MS Office </li>
                   </ul>
+                  </section>
                 </td>
               </tr>
             </tbody>
@@ -131,8 +171,9 @@
             <tbody>
                 <tr>
                     <td>
+                      <section id="projects">
                         <h2>Projects</h2>
-                        <span style="font-size: 14px; color: #616161; font-weight: normal; font-style: italic;">Images are expandable</span>
+                        <span style="font-size: 14px; color: #616161; font-weight: bold; font-style: italic;">(Images are expandable)</span>
                     </td>
                 </tr>
             </tbody>
@@ -141,40 +182,23 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
           
-              <tr onmouseout="r2r_stop()" onmouseover="r2r_start()">
-                <td style="padding:20px;width:42%;vertical-align:middle; text-align:middle;">
-                    <div class="one">
-                        <div class="two" id='r2r_image'>
-                            <div style="width:200%; position:relative; padding-bottom:112.5%;">
-                               <video 
-                                width="100%" 
-                                height="100%" 
-                                style="position:absolute; top:0; left:0; cursor:pointer;"
-                                autoplay 
-                                title="Click to expand"
-                                controls
-                                muted 
-                                loop
-                                onclick="openVideoModal(this)">
-                              <source src="Projects/ROS.mp4" type="video/mp4">
-                              Your browser does not support the video tag.
-                               </video>
-                            </div>
-                        </div>
-                        <img src='Projects/ROS arm.png' style="width:200%; height:112.5%">
-                    </div>
-                    <script type="text/javascript">
-                        function r2r_start() {
-                            document.getElementById('r2r_image').style.opacity = "1";
-                        }
-                        function r2r_stop() {
-                            document.getElementById('r2r_image').style.opacity = "0";
-                        }
-                        r2r_stop()
-                    </script>
-                </td>
-                <td style="padding:20px;width:58%;vertical-align:middle; text-align:left;">
-                  <papertitle><strong>ROS-Based Robotic Arm Simulation (December, 2024)</strong></papertitle>
+              <div class="project" onmouseover="r2r_start()" onmouseout="r2r_stop()">
+                <div class="project-media">
+                  <div class="video-hover-wrapper">
+                    <video
+                    muted
+                    class="project-video"
+                    poster="Projects/ROS arm.png"
+                    data-src="Projects/ROS.mp4"
+                    onclick="openVideoModal(this)"
+                  >
+                  </video>
+                    <div class="click-to-expand">Click to expand</div>
+                  </div>
+                </div>
+              
+                <div class="project-info">
+                  <h3 class="project-title">ROS-Based Robotic Arm Simulation <span class="project-date">(December, 2024)</span></h3>
                   <p>
                     Developed a robotic arm simulation system using ROS framework, integrating:<br>
                     • SOLIDWORKS-to-URDF conversion for 3D model compatibility<br>
@@ -183,100 +207,65 @@
                     • Custom Python scripts for automated arm movements
                   </p>
                   <p>
-                    <a href="https://github.com/reubenmathew7/Robotic-Arm-Sim-on-ROS/tree/master" target="_blank" style="color:#1772d0; text-decoration:none; font-weight:bold; font-size:0.85em;">
+                    <a href="https://github.com/reubenmathew7/Robotic-Arm-Sim-on-ROS/tree/master" target="_blank">
                       Learn more &raquo;
                     </a>
-                  </p>  
-                </td>
-              </tr>
+                  </p>
+                </div>
+              </div>
           
-              <tr onmouseout="r2r_stop_carla()" onmouseover="r2r_start_carla()">
-                <td style="padding:20px;width:42%;vertical-align:middle;">
-                    <div class="one">
-                        <div class="two" id='r2r_image_carla'>
-                            <div style="width:200%; position:relative; padding-bottom:112.5%;">
-                              <video 
-                              width="100%" 
-                              height="100%" 
-                              style="position:absolute; top:0; left:0; cursor:pointer;"
-                              autoplay 
-                              title="Click to expand"
-                              controls
-                              muted 
-                              loop
-                              onclick="openVideoModal(this)">
-                            <source src="Projects/Carla Sim.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                             </video>
-                            </div>
-                        </div>
-                        <img src='Projects/Carla simulation.png' style="width:200%; height:112.5%">
-                    </div>
-                    <script type="text/javascript">
-                        function r2r_start_carla() {
-                            document.getElementById('r2r_image_carla').style.opacity = "1";
-                        }
-                        function r2r_stop_carla() {
-                            document.getElementById('r2r_image_carla').style.opacity = "0";
-                        }
-                        r2r_stop_carla()
-                    </script>
-                </td>
-            <td style="padding:20px;width:58%;vertical-align:middle">
-              <papertitle><strong>CARLA Autonomous Vehicle Motion Planning (December, 2023)</strong></papertitle>
+              <div class="project" onmouseover="r2r_start_carla()" onmouseout="r2r_stop_carla()">
+                <div class="project-media">
+                  <div class="video-hover-wrapper">
+                    <video
+                    muted
+                    class="project-video"
+                    poster="Projects/Carla simulation.png"
+                    data-src="Projects/Carla Sim.mp4"
+                    onclick="openVideoModal(this)"
+                  ></video>
+                  <div class="click-to-expand">Click to expand</div>
+                  </div>
+                </div>
+              
+                <div class="project-info">
+                  <h3 class="project-title">CARLA Autonomous Vehicle Motion Planning <span class="project-date">(December, 2023)</span></h3>
                   <p>
                     Simulated an autonomous vehicle motion planning system in CARLA simulator utilizing:<br>
-                     • Behavioral planning logic for dynamic obstacle avoidance and stop sign handling<br>
-                     • Path generation algorithms with spiral trajectory optimization<br>
-                     • Static collision checking and path selection systems<br>
-                     • Custom velocity profile generation for various driving scenarios
+                    • Behavioral planning logic for dynamic obstacle avoidance and stop sign handling<br>
+                    • Path generation algorithms with spiral trajectory optimization<br>
+                    • Static collision checking and path selection systems<br>
+                    • Custom velocity profile generation for various driving scenarios
                   </p>
                   <p>
-                    <a href="https://github.com/reubenmathew7/CARLA-Vehicle-Simulation/tree/main" target="_blank" style="color:#1772d0; text-decoration:none; font-weight:bold; font-size:0.85em;">
+                    <a href="https://github.com/reubenmathew7/CARLA-Vehicle-Simulation/tree/main" target="_blank">
                       Learn more &raquo;
                     </a>
                     &nbsp;|&nbsp;
-                    <a href="https://www.coursera.org/account/accomplishments/verify/N9Y7ZHSZ36HY" target="_blank" style="color:#1772d0; text-decoration:none; font-weight:bold; font-size:0.85em;">
+                    <a href="https://www.coursera.org/account/accomplishments/verify/N9Y7ZHSZ36HY" target="_blank">
                       View Certificate &raquo;
                     </a>
                   </p>
-                </td>
-              </tr>
+                </div>
+              </div>
+              
           
-              <tr onmouseout="r2r_stop_vc()" onmouseover="r2r_start_vc()">
-                <td style="padding:20px;width:42%;vertical-align:middle;">
-                  <div class="one">
-                      <div class="two" id='r2r_image_vc'>
-                          <div style="width:200%; position:relative; padding-bottom:112.5%;">
-                            <video 
-                            width="100%" 
-                            height="100%" 
-                            style="position:absolute; top:0; left:0; cursor:pointer;"
-                            autoplay 
-                            title="Click to expand"
-                            controls
-                            muted 
-                            loop
-                            onclick="openVideoModal(this)">
-                          <source src="Projects/Vehicle Counter Demo.mp4" type="video/mp4">
-                          Your browser does not support the video tag.
-                           </video>
-                          </div>
-                      </div>
-                      <img src='Projects/Vehicle counter.png' style="width:200%; height:112.5%">
+              <div class="project" onmouseover="r2r_start_vc()" onmouseout="r2r_stop_vc()">
+                <div class="project-media">
+                  <div class="video-hover-wrapper">
+                    <video
+                    muted
+                    class="project-video"
+                    poster="Projects/Vehicle counter.png"
+                    data-src="Projects/Vehicle Counter Demo.mp4"
+                    onclick="openVideoModal(this)"
+                  ></video>
+                  <div class="click-to-expand">Click to expand</div>
                   </div>
-                  <script type="text/javascript">
-                      function r2r_start_vc() {
-                          document.getElementById('r2r_image_vc').style.opacity = "1";
-                      }
-                      function r2r_stop_vc() {
-                          document.getElementById('r2r_image_vc').style.opacity = "0";
-                      }
-                      r2r_stop_vc()
-                  </script>
-              </td>
-                <td style="padding:20px;width:58%;vertical-align:middle">
-                  <papertitle><strong>Vehicle Detection and Counting using YOLOv8 and OpenCV (May, 2024)</strong></papertitle>
+                </div>
+              
+                <div class="project-info">
+                  <h3 class="project-title">Vehicle Detection and Counting using YOLOv8 and OpenCV <span class="project-date">(May, 2024)</span></h3>
                   <p>
                     Built a computer vision-based vehicle detection and counting system featuring:<br>
                     • YOLOv8 and OpenCV for real-time vehicle detection and tracking<br>
@@ -285,47 +274,30 @@
                     • Real-time visualization system with count display and tracking boxes
                   </p>
                   <p>
-                    <a href="https://github.com/reubenmathew7/Car-Counter" target="_blank" style="color:#1772d0; text-decoration:none; font-weight:bold; font-size:0.85em;">
+                    <a href="https://github.com/reubenmathew7/Car-Counter" target="_blank">
                       Learn more &raquo;
                     </a>
                   </p>
-                </td>
-              </tr>
+                </div>
+              </div>
+              
           
-              <tr onmouseout="r2r_stop_matlab()" onmouseover="r2r_start_matlab()">
-                <td style="padding:20px;width:42%;vertical-align:middle;">
-                  <div class="one">
-                      <div class="two" id='r2r_image_matlab'>
-                          <div style="width:200%; position:relative; padding-bottom:112.5%;">
-                            <video 
-                            width="100%" 
-                            height="100%" 
-                            style="position:absolute; top:0; left:0; cursor:pointer;"
-                            autoplay 
-                            title="Click to expand"
-                            controls
-                            muted 
-                            loop
-                            onclick="openVideoModal(this)">
-                          <source src="Projects/COVID-19 Visualizer Demo.mp4" type="video/mp4">
-                          Your browser does not support the video tag.
-                           </video>
-                          </div>
-                      </div>
-                      <img src='Projects/COVID-19 Visualizer.png' style="width:200%; height:112.5%">
+              <div class="project" onmouseover="r2r_start_matlab()" onmouseout="r2r_stop_matlab()">
+                <div class="project-media">
+                  <div class="video-hover-wrapper">
+                    <video
+                    muted
+                    class="project-video"
+                    poster="Projects/COVID-19 Visualizer.png"
+                    data-src="Projects/COVID-19 Visualizer Demo.mp4"
+                    onclick="openVideoModal(this)"
+                  ></video>
+                  <div class="click-to-expand">Click to expand</div>
                   </div>
-                  <script type="text/javascript">
-                      function r2r_start_matlab() {
-                          document.getElementById('r2r_image_matlab').style.opacity = "1";
-                      }
-                      function r2r_stop_matlab() {
-                          document.getElementById('r2r_image_matlab').style.opacity = "0";
-                      }
-                      r2r_stop_matlab()
-                  </script>
-              </td>
-                <td style="padding:20px;width:58%;vertical-align:middle">
-                  <papertitle><strong>Matlab Program to visualize COVID19 data (November, 2023)</strong></papertitle>
+                </div>
+              
+                <div class="project-info">
+                  <h3 class="project-title">MATLAB Program to Visualize COVID-19 Data <span class="project-date">(November, 2023)</span></h3>
                   <p>
                     Created a MATLAB-based COVID-19 data visualization platform with:<br>
                     • Object-oriented programming for data processing and analysis<br>
@@ -334,71 +306,65 @@
                     • Real-time statistical analysis with adjustable moving averages
                   </p>
                   <p>
-                    <a href="https://github.com/reubenmathew7/COVID-19-Visualizer" target="_blank" style="color:#1772d0; text-decoration:none; font-weight:bold; font-size:0.85em;">
+                    <a href="https://github.com/reubenmathew7/COVID-19-Visualizer" target="_blank">
                       Learn more &raquo;
                     </a>
                     &nbsp;|&nbsp;
-                    <a href="https://www.coursera.org/account/accomplishments/verify/UUASBJTUCYCA" target="_blank" style="color:#1772d0; text-decoration:none; font-weight:bold; font-size:0.85em;">
+                    <a href="https://www.coursera.org/account/accomplishments/verify/UUASBJTUCYCA" target="_blank">
                       View Certificate &raquo;
                     </a>
                   </p>
-                </td>
-              </tr>
+                </div>
+              </div>
 
-              <tr onmouseout="r2r_stop_ansys()" onmouseover="r2r_start_ansys()">
-                <td style="padding:20px;width:42%;vertical-align:middle;">
-                    <div class="one">
-                        <div class="two" id='r2r_image_ansys'>
-                            <div style="width:200%; position:relative; padding-bottom:112.5%;">
-                              <video 
-                              width="100%" 
-                              height="100%" 
-                              style="position:absolute; top:0; left:0; cursor:pointer;"
-                              autoplay 
-                              title="Click to expand"
-                              controls
-                              muted 
-                              loop
-                              onclick="openVideoModal(this)">
-                            <source src="Projects/Ansys sim.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                             </video>
-                            </div>
-                        </div>
-                        <img src='Projects/FSAE Chassis analysis.jpg' style="width:200%; height:112.5%">
-                    </div>
-                    <script type="text/javascript">
-                        function r2r_start_ansys() {
-                            document.getElementById('r2r_image_ansys').style.opacity = "1";
-                        }
-                        function r2r_stop_ansys() {
-                            document.getElementById('r2r_image_ansys').style.opacity = "0";
-                        }
-                        r2r_stop_ansys()
-                    </script>
-                </td>
-            <td style="padding:20px;width:58%;vertical-align:middle">
-              <papertitle><strong>FSAE Chassis Ansys Structural Simulations (September, 2022)</strong></papertitle>
-                 <p>
-                  Designed and analyzed a Formula SAE racing chassis, integrating:<br>
-                  • SOLIDWORKS for complete 3D chassis modeling <br>
-                  • ANSYS Structural simulation for impact and performance testing<br>
-                  • Multiple load case analyses including front impact, side collision, cornering loads, and torque tests
-                 </p>
-                </td>
-              </tr>
+              <div class="project" onmouseover="r2r_start_ansys()" onmouseout="r2r_stop_ansys()">
+                <div class="project-media">
+                  <div class="video-hover-wrapper">
+                    <video
+                    muted
+                    class="project-video"
+                    poster="Projects/FSAE Chassis analysis.jpg"
+                    data-src="Projects/Ansys sim.mp4"
+                    onclick="openVideoModal(this)"
+                  ></video>
+                  <div class="click-to-expand">Click to expand</div>
+                  </div>
+                </div>
+              
+                <div class="project-info">
+                  <h3 class="project-title">FSAE Chassis ANSYS Structural Simulations <span class="project-date">(September, 2022)</span></h3>
+                  <p>
+                    Designed and analyzed a Formula SAE racing chassis, integrating:<br>
+                    • SOLIDWORKS for complete 3D chassis modeling<br>
+                    • ANSYS Structural simulation for impact and performance testing<br>
+                    • Multiple load case analyses including front impact, side collision, cornering loads, and torque tests
+                  </p>
+                  <p>
+                    <a href="https://github.com/reubenmathew7/FSAE-CHassis-structural-Analysis" target="_blank">
+                      Learn more &raquo;
+                    </a>
+                  </p>
+                </div>
+              </div>
+              
           
-              <tr onmouseout="r2r_stop_altair()" onmouseover="r2r_start_altair()">
-                <td style="padding:20px;width:42%;vertical-align:middle;">
-                    <div class="one">
-                        <img src='Projects/Altair.jpg' 
-                             style="width:200%; height:112.5%; cursor: pointer;" 
-                             onclick="openModal(this.src)"
-                             title="Click to expand">
-                    </div>
-                </td>
-                <td style="padding:20px;width:58%;vertical-align:middle">
-                  <papertitle><strong>Undergraduate Technical Team Bots (~June, 2022)</strong></papertitle>
+              <div class="project" onmouseover="r2r_start_altair()" onmouseout="r2r_stop_altair()">
+                <div class="project-media">
+                  <video
+                  muted
+                  playsinline
+                  class="project-video"
+                  poster="Projects/Altair.jpg"
+                  onclick="openModal(this.poster)"
+                ></video>
+                  <div class="click-to-expand">Click to expand</div>
+                </div>
+              
+                <div class="project-info">
+                  <h3 class="project-title">
+                    Undergraduate Technical Team Bots 
+                    <span class="project-date">(February, 2022 – April, 2024)</span>
+                  </h3>
                   <p>
                     Led robotics projects at DTU Altair technical team, integrating:<br>
                     • Micromouse robot with Arduino control system, IR sensors, and H-Bridge motor drivers<br>
@@ -406,27 +372,26 @@
                     • Remote-operated Robosoccer bot with custom sheet metal and 3D-printed components<br>
                     • Prototype designs for CanSat, Intelligent Ground Vehicle Competition and various other competitions.
                   </p>
-                </td>
-              </tr>
+                  <p>
+                    <a href="https://www.altair-dtu.in/" target="_blank">
+                      Learn more &raquo;
+                    </a>
+                  </p>
+                </div>
+              </div>
+              
                  
             </tbody>
           </table>
                     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
                       <tr>
                         <td style="padding:0px">
-                         <br>
-                         <br>
                          
-                          <p style="text-align: center;font-size: 14px;">The template for this website was cloned from <a href = "https://jonbarron.info/" style="font-size: 14px;">here.</a>
+                         <p style="text-align: center; font-size: 13px;"> <a href="#" style="text-decoration: none; color: #1772d0;">Back to top ↑</a> </p>
                           
                         </td>
                       </tr>
-                    </tbody></table>
-                  </td>
-                </tr>
               </table>
-        
-          </tbody></table>
         </td>
       </tr>
     </table>
@@ -467,6 +432,87 @@ function closeVideoModal() {
     document.getElementById('modalVideo').pause();
 }
 </script>
+</div> <!-- End container -->
+</body>
     
   </body>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const toggleSwitch = document.getElementById("theme-toggle");
+        const body = document.body;
+        const label = document.querySelector(".toggle-label");
+    
+        // Load stored theme preference
+        if (localStorage.getItem("theme") === "dark") {
+            body.classList.add("dark-mode");
+            toggleSwitch.checked = true;
+            label.textContent = "Light Mode";
+        }
+    
+        toggleSwitch.addEventListener("change", function () {
+            if (this.checked) {
+                body.classList.add("dark-mode");
+                localStorage.setItem("theme", "dark");
+                label.textContent = "Light Mode";
+            } else {
+                body.classList.remove("dark-mode");
+                localStorage.setItem("theme", "light");
+                label.textContent = "Dark Mode";
+            }
+        });
+    });
+    </script>
+
+<script>
+  const tooltip = document.querySelector('.click-to-expand');
+  const projects = document.querySelectorAll('.project');
+
+  projects.forEach(project => {
+    const video = project.querySelector('.project-video');
+    if (!video || video.classList.contains('static-video')) return;
+
+    let sourceAdded = false;
+
+    // Video playback on entire project hover
+    project.addEventListener('mouseenter', () => {
+      if (!sourceAdded && video.dataset.src) {
+        const source = document.createElement('source');
+        source.src = video.dataset.src;
+        source.type = 'video/mp4';
+        video.appendChild(source);
+        video.load();
+        sourceAdded = true;
+      }
+
+      video.play();
+    });
+
+    project.addEventListener('mouseleave', () => {
+      video.pause();
+      video.currentTime = 0;
+      video.removeAttribute('controls');
+      tooltip.style.opacity = '0'; // Hide tooltip on full leave
+    });
+
+    // Tooltip only when cursor is over the actual video
+    video.addEventListener('mouseenter', () => {
+      tooltip.style.opacity = '1';
+      video.setAttribute('controls', 'controls');
+    });
+
+    video.addEventListener('mousemove', (e) => {
+      tooltip.style.top = `${e.clientY}px`;
+      tooltip.style.left = `${e.clientX}px`;
+    });
+
+    video.addEventListener('mouseleave', () => {
+      tooltip.style.opacity = '0';
+      video.removeAttribute('controls');
+    });
+  });
+</script>
+
+
+
 </html>
