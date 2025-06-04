@@ -330,7 +330,9 @@ input:checked + .slider:before {
   align-items: center;
   justify-content: center;
   gap: clamp(10px, 4vw, 30px);
-  height: 100%;
+  height: auto;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 .navbar-center a {
